@@ -1,0 +1,764 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&display=swap');
+ *{
+ margin: 0;
+ padding: 0;
+ scroll-behavior: smooth;
+ -webkit-tap-highlight-color: transparent;
+ font-family: 'Roboto', sans-serif;
+ 
+ }
+ /* Page one */
+ .pageone{
+ background: rgba(0, 0, 0, 0.6) url("..css/index.html/bg.jpg");
+ background-size: cover;
+ background-blend-mode: darken;
+ background-repeat: no-repeat;
+ height: 100vh;
+ }
+ .navbar{
+ display: flex;
+ justify-content: space-between;
+ position: fixed;
+ cursor: pointer;
+ background-color: #041C32;
+ width: 100vw;
+height: auto;
+ transition: height 0.4s;
+ overflow: hidden;
+ 
+ 
+ }
+ .navslide{
+     height: 30vh;
+ }
+ .navcf{
+ display: none;
+ }
+ .logo{
+ width: 16vmin;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 10vh;
+ }
+ .logo img{
+ width: 46%;
+ border-radius: 50%;
+ }
+ .navlist{
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ align-items: center;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 250;
+ }
+ .navlist li{
+ list-style: none;
+ padding: 2vw;
+ font-size: 1rem;
+ }
+ .navlist li a{ 
+ text-decoration: none;
+ color: white;
+ font-family: 'Ubuntu', sans-serif;
+ position: relative;
+ display: block;
+ padding: 3px 10px;
+ }
+ .nav:after {
+ content: "";
+ position: absolute;
+ background-color: white;
+ height: 2px ;
+ width:0;
+ left: 0;
+ bottom: -4px;
+ transition: 0.3s;
+ }
+ .nav:hover:after{
+ width: 100%;
+ }
+ .boxmain{
+ display: flex;
+ justify-content: left;
+ color: white;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ max-width: 100%;
+ margin: auto;
+ padding-top: 40vh;
+ width: 50vw;
+ }
+ .twohalves{
+ display: flex;
+ flex-direction: column;
+ justify-content: left;
+ }
+ .firsthalf{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ }
+ .chd{
+ font-size: 5.9vmin;
+ font-weight: 500;
+ font-family: 'Raleway',sans-serif;
+ font-weight: 800;
+ text-align: center;
+ }
+ .intro{
+ font-size: 14px;
+ margin-top: 2vh;
+ font-weight: 150;
+ text-align: center;
+ font-size: 20px;
+ }
+ .secondhalf {
+ margin-left: 4vw;
+ } 
+ .btncf{
+ color: white;
+ background-color: transparent;
+ border: 2px white solid;
+ border-radius: 20%;
+ width: 16vh;
+ height: 16vh;
+ cursor: pointer;
+ font-size: 15 px;
+ 
+ }
+ .btncf:hover{
+ background-color: white;
+ color: #041C32;
+ transition: all 0.5s;
+ }
+ .hamburger{
+ display:none;
+ } 
+ .bar{
+ height: 1vh;
+ width: 6vw;
+ }
+ .fas{
+ display: flex;
+ align-items: flex-end;
+ flex-direction: column;
+ } 
+ .barbar{
+ display: block;
+ height: 3px;
+ margin: 5px auto;
+ -webkit-transition: all 0.3s ease-in-out;
+ transition: all 0.3s ease-in-out;
+ background-color: white;
+ border-radius: 10%; 
+ }
+ .bar1{
+ margin-top: 2px;
+ width: 35px;
+ transition: all 0.5s ;
+ margin-left: 19px;
+ }
+ .bar2{
+ margin-top: 2px;
+ width: 25px;
+ transition: all 0.5s ;
+ margin-left: 29px;
+ }
+ .bar3{
+ margin-top: 2px;
+ width: 15px;
+ transition: all 0.5s ;
+ margin-top: 2px;
+ width: 15px;
+ transition: all 0.5s;
+ margin-left: 39px;
+ }
+ .barone{
+ width: 15px;
+ margin-left:39px ;
+ }
+ .bartwo{
+ width: 25px;
+ 
+ }
+ .barthree{
+ width: 35px;
+ margin-left: 19px;
+ }
+ @keyframes animationone{
+ from{
+ height: 8vh;
+ }
+ to{ 
+ height: 40vh;
+ }
+ }
+ @media screen and (max-width:779px) {
+ .navlist{
+ flex-direction: column;
+ margin-top: 5vh;
+ margin-left: 10vw;
+ scroll-behavior: smooth;
+ }
+ .navbar{
+ width: 100vw;
+ 
+ }
+ .logo{
+ height: 8vh;
+ }
+ .navlistanimation{
+ transition: all 0.5s ease-in;
+ height: 20vh;
+ }
+ .nav{
+ font-size: 2.5vw;
+ padding-top: 5vh;
+ }
+ .vclass-resp{
+ opacity: 0;
+ }
+ .navbar.hnav-resp{
+ height: 8vh;
+ 
+ }
+ .hamburger {
+ display: block;
+ cursor: pointer;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ font-size: 25px;
+ flex-direction: column;
+ padding: 15px 0px 20px 20px;
+ color: white;
+ transition-property: height;
+ transition-duration: 1s;
+ scroll-behavior: smooth;
+ margin-right: 10px;
+ }
+ .hamburger:hover{
+ height: 20vh;
+ }
+ .firsthalf{
+ flex-wrap: wrap;
+ justify-content: space-around;
+ text-align: center;
+ align-items: center;
+ width: 100vw;
+ }
+ .boxmain{
+ flex-wrap: wrap;
+ justify-content: space-around;
+ text-align: center;
+ align-items: center;
+ height: 50vh;
+ padding-top: 30vh;
+ }
+ .secondhalf{
+ margin-top: 2vh;
+ }
+ .twohalves{
+ justify-content: space-around;
+ height: 30vh;
+ }
+ }
+ /* Page two */
+ .pagetwo{
+ height: 100vh;
+ background: rgba(255, 255, 255, 0.76) url("../chitgate.jpg");
+ background-size: cover;
+ background-blend-mode: lighten;
+ background-repeat: no-repeat;
+ display: flex;
+ }
+ .aboutus{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ text-align: center;
+ align-items: center;
+ flex-direction: column;
+ }
+ .au{
+ color: #041C32;
+ font-size: 3rem;
+ font-weight: 500;
+ padding-top: 10vh;
+ }
+ .subau{
+ height: auto;
+ color: #041C32;
+ }
+ .moreau{
+ text-decoration: none;
+ color: black;
+ }
+ .imgo{
+ width: 55vw;
+ border: #041C32 solid 10px;
+ }
+ @media screen and (max-width:799vw) {
+ .pagetwo{
+ flex-wrap: wrap;
+ }
+ }
+
+ /* Page three */
+ .pagethree{
+ background: rgba(225,225,225, 0.5) url("../bg.jpg");
+ background-size: cover;
+ background-blend-mode: lighten;
+ background-repeat: no-repeat;
+ height: 100vh;
+ display: flex;
+ text-align: center;
+ justify-content: center;
+ }
+ .li{
+ 
+ background-color: #041C32;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ height: 60%;
+ margin-top: 19vh;
+ width: 50vmin;
+ border-radius: 16px;
+ padding: 4px;
+ min-width: 300px; 
+ }
+ .color{
+ color: white;
+ font-family: 'Raleway', sans-serif;
+ }
+ .login{
+ font-size: 44px;
+ margin-top: -6vh;
+ margin-bottom: 8vh;
+ font-weight: 150;
+ }
+ .box{
+ width: 17vw;
+ margin-top: 2vh;
+ height: 5vh;
+ border-radius: 8px;
+ border: none;
+ }
+ .textbox{
+ padding-left: 10px;
+ width: 25vw;
+ max-width: 250px;
+ }
+ .showpass{
+ color: white;
+ padding-top: 2vh; 
+ }
+ .example{
+ margin-top: 5vh;
+ }
+ .submit{
+ color: white;
+ background-color: transparent;
+ border: 2px white solid;
+ font-size: 2vw;
+ font-family: 'Raleway', sans-serif;
+ width: 18vw;
+ margin-top: 8vh;
+ height: 5vh;
+ border-radius: 8px;
+ padding: 2px;
+ min-width: 130px;
+ font-size: 1vw;
+ }
+ .submit:hover{
+ background-color: white;
+ color: #041C32;
+ border: 2px solid white;
+ transition: all 0.5s;
+ cursor: pointer;
+ }
+ @media screen and (max-width:779px) {
+ .pagethree{ 
+ background: rgba(0, 0, 0, 0.6) url("../bg.jpg");
+ background-size: cover;
+ background-blend-mode: darken;
+ background-repeat: no-repeat;
+ height: 100vh;
+ }
+ .login{
+ font-size: 2rem;
+ }
+ .li{
+ background: none;
+ border: none;
+ }
+ .submit{
+ background-color: transparent ;
+ width: 35vw;
+ font-size: 1rem;
+ margin-top: 10vh;
+ }
+ .textbox{
+ width: 40vw;
+ }
+ }
+ /* Page four */
+ .pagefour{
+ height: 100vh;
+ 
+ }
+ .pagefor{
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ padding-top: 7.5vh;
+ }
+ .one{
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ font-size: 50px;
+ width: 40%;
+ padding-top: 30vh;
+ height: 55%;
+ padding: 15vh 6vh 15vh 6vh;
+ font-family: 'Ubuntu', sans-serif;
+ margin-top: 26vh;
+ color: white;
+ background-color: #041C32;
+ border-radius: 20px;
+ font-weight: 500;
+ }
+ .two{
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ flex-direction: column;
+ font-weight: 150;
+ margin-top: 4vh;
+ }
+ .cfbutton{
+ height: 10vh;
+ font-size: 25px;
+ margin-top: 2vh;
+ background-color: white;
+ color: #041C32;
+ border-radius: 10px;
+ border: none;
+ margin-left: 10vw;
+ font-family: 'Ubuntu', sans-serif;
+ width: 30vw;
+ }
+ .cfbutton:hover{
+ background-color: #041C32;
+ color: white;
+ transition: 0.9s;
+ cursor: pointer;
+ }
+ .fas{
+ margin-right: 2vw;
+ }
+ @media( max-width:1024px) {
+ .cfbutton{
+ background-color:#041C32 ;
+ color: white;
+ width: 100%;
+ }
+ .one{
+ display: none;
+ }
+ .pagefor{
+ margin-right: 20vw;
+ }
+ }
+ /* Page five */
+ .footer{
+ background-color: #041C32;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ font-size: 1.1rem;
+ }
+ .foot{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ flex-direction: column;
+ padding: 1vw;
+ 
+ }
+ .three{
+ display: flex;
+ color: white;
+ justify-content: space-evenly;
+ padding: 2vw;
+ flex-wrap: wrap;
+ text-align: center;
+ }
+ .contactus{
+ padding: 1vw;
+ margin: 20px;
+ }
+ .connect{
+ display: flex;
+ margin-top: 1vh;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ }
+ .last{
+ color: white;
+ text-align: center;
+ }
+ .divcu{
+ display: flex;
+ flex-direction: column;
+ padding: 1vw;
+ margin: 20px;
+ }
+ .email{
+ padding: 1vw;
+ margin: 20px;
+ }
+ .class{
+ margin-bottom: 1vh;
+ }
+ /* About us */
+ .pageaboutus{
+    
+ background: rgba(255, 255, 255, 0.76) url("../chitgate.jpg");
+ background-size: cover;
+ background-blend-mode: lighten;
+ background-repeat: no-repeat;
+ } 
+ .aupageone{
+
+ display: flex;
+ flex-direction: row;
+ justify-content:space-around;
+ text-align: center;
+ align-items: center;
+ padding: 5vw 4vw 0 4vw;
+ }
+ .auimg{
+ display: flex;
+ padding: 0 0 10vh 5vh;
+ 
+ }
+ .auimg img{
+ border: #041C32 solid 20px;
+ }
+ .heading{
+ display: flex;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ padding: vh 0 0 0 ;
+ font-size: 7vh;
+ }
+ .aucontent{
+ line-height: 4vh;
+ }
+ .textarea{
+ text-align: initial;
+ }
+ .heading{
+ padding-top: 15vh;
+ }
+ @media screen and (max-width:1000px) {
+ .aupageone{
+ flex-wrap: wrap;
+ text-align: center;
+ }
+ .auimg img{
+ display: none;
+ 
+ }
+ .aucontent{
+ margin: 3vh 0 0 0 ;
+ line-height: 4vh;
+ }
+ }
+ /* Form Page */
+ .pages{
+ background: rgba(0, 0,0, 0.8) url("../img/bg.jpg");
+ background-size: cover;
+ background-blend-mode: darken;
+ background-repeat: no-repeat;
+ height: 100vh;
+ display: flex;
+ text-align: center;
+ justify-content: center;
+ 
+ }
+ .textclass{
+ height: 60px;
+ }
+ .sub{
+ height: 60vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+ border-radius: 20px;
+ margin: 25vh 0 0 0;
+ }
+ .complaintform{
+ display: flex;
+ text-align: center;
+ justify-content: space-evenly;
+ flex-direction: column;
+ font-size: 30px;
+ color: white;
+ padding: 4vw ;
+ 
+ }
+ .mit{
+ width: 38vh;
+ height: 6vh;
+ margin: 6vh ;
+ border: 2px solid white;
+ background-color: transparent;
+ color: white;
+ border-radius: 8px;
+ }
+ .links{
+ text-decoration: none;
+ color: white;
+ }
+ .mit:hover{
+ background-color: white;
+ color: #041C32;
+ cursor: pointer;
+ }
+ .textarea{
+ height: 25vh;
+ width: 35vw;
+ }
+ @media screen and (max-width:779px) {
+ .complaintform{
+ font-size: 24px;
+ padding: 8vh ;
+ }
+ .sub{
+ height: 100vh;
+ background: none;
+ border: none;
+ margin: 0;
+ }
+ .mit{
+ width: 38vh;
+ }
+ .fname{
+ border-radius: 10px;
+ }
+ .textarea{
+ height: 25vh;
+ width: 75vw;
+ }
+ }
+ .faqmain{
+     width: 100%;
+     height: 100vh;
+ 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: rgba(225,225,225, 0.6) url("../html/faq.html/bg.jpg");
+ background-size: cover;
+ background-blend-mode: lighten;
+ background-repeat: no-repeat;
+ height: 100vh;
+ }
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2vh; margin-top: 5vh;
+}
+.accordianitem{
+    background-color: #041C32;
+    border-radius: 1vh;
+    margin-bottom: 1.5vh;
+    padding: 1vh;
+    box-shadow: 1vh 0.5vh 1vh rgba(0, 0, 0, 0.438);
+   
+}
+.faq{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    font-size: 5vh;
+   
+    color: #041C32;
+    font-weight: 700;
+}
+.accordianlink{
+    font-size: 2.5vh;
+    text-decoration: none;
+    color: white;
+    background-color: ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.5vh 0;
+}
+.fa-solid{
+    color: #e7d5ff;
+    padding: 1vh;
+    display: none;
+}
+.fa-minus{
+    display: none;
+}
+.answer{
+    
+    font-size: 10px;
+  
+    background-color: rgba(225,0,0,0.6);
+    transition: max-height 650ms;
+    color: white;
+    background-color: bl;
+  
+}
+.answer::before{
+    content: "";
+    position: relative;
+    width: rem;
+    height: 90%;
+    background-color:;
+    top: 50%;
+    left: 0;
+    transform: translateY((-50%));
+
+}
+.answer p{
+    font-size: 1.9vh;
+    padding: 2.5vh;
+}
+.accordianitem:target .answer{
+    max-height: 20vh;
+
+}
+.accordianitem:target .accordianlink .fa-plus{
+    display: none;
+}
+.accordianitem:target .accordianlink .fa-minus{
+    display: block;
+}
+@media screen and (max-width:779px) {
+    .faqmain{
+        flex-wrap: wrap;
+    }
+    .accordianlink{
+        font-size: 10px;
+    }
+    .answerclickfive{
+        display: none;
+    }
+}

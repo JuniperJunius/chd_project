@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon"
+        href="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/favicon-chitkara.ico" />
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHITKARA HELP DESK</title>
+    <script src="https://kit.fontawesome.com/32afda6096.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- Page one -->
+<!-- navbar -->
+    <div class="pageone" id="home">
+        <nav class="navbar hnav-resp">
+            <div class="logo"> <img src="img/logo.png" alt="chitkara logo"></div>
+            <ul class="navlist vclass-resp ">
+                <li><a class="nav" href="index.html#home">Home</a></li>
+                <li><a class="nav" href="index.html#aboutus">About Us</a></li>
+                <li><a class="nav" href="index.html#faq">FAQ</a></li>
+                <li class="navli"><a class="nav" href="index.html#login">Log In</a></li>
+                <li class="navcf"><a class=" nav " href="index.html#complaintform">Compliant Form</a></li>
+                <li><a class="nav" href="index.html#contactus">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" onclick="onhamburgerclick()">
+                <div class="fas">
+                    <span class="bar1 barbar">
+                    </span>
+                    <span class="bar2 barbar">
+                    </span>
+                    <span class="bar3 barbar">
+                    </span>
+                </div>
+            </div>
+<!-- first section -->
+        </nav>
+        <section class="firstsection containerss ">
+            <div class="boxmain ">
+                <div class="twohalves ">
+                    <div class="firsthalf">
+                        <p class="chd">CHITKARA HELP DESK</p>
+                    </div>
+                    <div class="thirdhalf">
+                        <p class="intro">An online platform wherre all the queries of students are resolved within
+                            seconds.
+                            Created and developed by striving chitkarians. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+<!-- About Us page -->
+    <div class="pagetwo" id="aboutus">
+        <div class="aboutus">
+            <div class="au"> About Us</a></div>
+            <div class="subau">CHITKARA UNIVERSITY in Punjab, has been founded by Dr. Ashok Chitkara and Dr.
+                Madhu
+                Chitkara, who have been passionate teachers for more than 40 years now. Since inception,
+                Chitkara
+                University has been different.
+                <br> <a href="html/aboutus.html" class="moreau"> <b> More → </a></b>
+            </div>
+            <img class="imgo"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Chitkara_Punjab_Entrance_Gate.jpg"
+                alt="chitimg">
+        </div>
+    </div>
+<!-- FAQ -->
+    <section class="faqmain" id="faq">
+        <div class="container">
+            <div class="accordian">
+                <div class="accordianitem" id="question2">
+                    <a class="accordianlink" onclick="accordianlinkontwo()" href="#question2">
+                        Hot water isnt flowing from tap. What to do ?
+                    </a>
+                    <div class="answer answerclicktwo">
+                        <p>
+                            Wait for some time. The water tank is located at the roof of the
+                            building. This might result in slow delivery of water to the lower floors. Kindly cooporate.
+                            If the problem still exists please register a complain.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordianitem" onclick="accordianlinkonthree()" id="question3">
+                    <a class="accordianlink" href="#question3">
+                        Doors are always noisy. What to do?
+                    </a>
+                    <div class="answer answerclickthree">
+                        <p>
+                            Apply oil to the hinges of the door occasinally to avoid noises. In case the problem
+                            persists register a complaint.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordianitem" id="question4">
+                    <a class="accordianlink" onclick="accordianlinkonfour()" href="#question4">
+                        There is a power cut. What to do?
+                    </a>
+                    <div class="answer answerclickfour">
+                        <p>
+                            University might be working on the electical department of your hostel therfore wait for
+                            some time. If there's a power cut longer than 10 minutes register a complaint.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordianitem answerclickfive" id="question5">
+                    <a class="accordianlink" onclick="accordianlinkonfive()" onclick="accordianlinkon()"
+                        href="#question5">
+                        WiFi isn't working. What to do?
+                    </a>
+                    <div class="answer ">
+                        <p>
+                            Kindly recheck the password you entered. Try restarting your mobile. IF the problem still
+                            exists register a complaint.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Log In page -->
+    <div class="pagethree" id="login">
+        <div class="li">
+            <div class=" login">Log In to access
+                <br>
+                Complaint Form
+            </div>
+            <div class="form-example">
+                <input class="box textbox username" type="email" name="name" id="name" placeholder="Enter your email"
+                    required>
+            </div>
+            <div class="form-example">
+                <input class="box textbox password" type="password" name="email" id="email" placeholder="Enter password"
+                    required>
+            </div>
+            <div class="example">
+                <label class="showpass" for="checkbox">Show Password </label>
+                <input id="checkbox" onclick="whenchecked()" type="checkbox" value="Show Password">
+            </div>
+            <div class="form-example">
+                <input class="submit" type="submit" onclick="onloginclick()" value="Submit">
+            </div>
+        </div>
+    </div>
+    </div>
+<!-- Complaint Form -->
+    <div class="pagefour" id="complaintform">
+        <div class="pagefor">
+            <div class="one">
+                <div class="we">Got a problem? Dont worry we got you!</div>
+            </div>
+            <div class="two" id="two">
+                <a href="html/form.html"> <button class="cfbutton"><i class="fas fa-bolt"></i> Eelctrical
+                        Appliances</button></a>
+                <a href="html/form.html"> <button class="cfbutton"><i class="fas fa-utensils"></i> Mess</button></a>
+                <a href="html/form.html"> <button class="cfbutton"><i class="fas fa-hand-holding-water"></i> Water
+                        Supply</button></a>
+                <a href="html/form.html"> <button class="cfbutton"><i class="fas fa-wifi"></i> Wifi</button></a>
+                <a href="html/form.html"> <button class="cfbutton"><i class="fas fa-chair"></i> Furniture</button></a>
+                <a href="html/form.html"> <button class="cfbutton"><i class="fas fa-pump-medical"></i>
+                        Hygiene</button></a>
+                <a href="html/form.html"> <button class="cfbutton"><i class="fas fa-clipboard"></i> Other</button></a>
+            </div>
+        </div>
+    </div>
+<!-- Footer -->
+    <div class="footer" id="contactus">
+        <div class="foot">
+            <div class="three">
+                <div class="divcu">
+                    <p class=" class">Contact Us:</p>
+                    <p>Helpline : 7843984587</p>
+                    <p>Girls Hostel : 9298547843</p>
+                    <p>Boys Hostel : 9843628463</p>
+                </div>
+                <div class="email">
+                    <p class=" class">Mail us at:</p>
+                    <p class="subm class "> chitkarahelpdesk@chitkara.edu.in</p>
+                </div>
+                <div class=" class contactus">Connect with us:
+                    <div class="connect">
+                        <p> <a class="links" href="https://www.facebook.com/ChitkaraU"> <i class="fab fa-facebook"></i>
+                        </p></a>
+                        <p> <a class="links" href="https://youtube.com/chitkaraU"> <i class="fab fa-youtube"></i></i>
+                        </p></a>
+                        <p> <a class="links" href="https://twitter.com/chitkarau"> <i class="fab fa-twitter"></i></p>
+                        </a>
+                        <p> <a class="links" href="https://www.linkedin.com/edu/school?id=43021"><i
+                                    class="fab fa-linkedin"></i></p></a>
+                        <p> <a class="links" href="https://www.instagram.com/chitkarau/"> <i
+                                    class="fab fa-instagram"></i></p></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="last">
+                <p class="textt"> @2022 Chitakara Help Desk. All Rights Reseved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/javascript.js"></script>
+
+</html>
